@@ -1,0 +1,63 @@
+{
+  "id": "demo-ejemplo",
+  "flow": "ejemplo",
+  "title": "Crear un proyecto nuevo (vídeo de prueba del kit)",
+  "fps": 30,
+  "width": 1440,
+  "height": 800,
+  "captionStyle": { "burnIn": false },
+  "data": {
+    "user": { "id": "u1", "firstName": "Alex", "lastName": "Moreno", "company": "Estudio Aurora" },
+    "people": [
+      { "id": "p1", "firstName": "Lucía", "lastName": "Ferrer", "role": "Diseño" },
+      { "id": "p2", "firstName": "Daniel", "lastName": "Okafor", "role": "Desarrollo" },
+      { "id": "p3", "firstName": "Marta", "lastName": "Quiroga", "role": "Producto" },
+      { "id": "p4", "firstName": "Kenji", "lastName": "Almeida", "role": "Datos" },
+      { "id": "p5", "firstName": "Sara", "lastName": "Nyberg", "role": "Marketing" }
+    ],
+    "companies": [
+      { "id": "c1", "name": "Bruma Foods" },
+      { "id": "c2", "name": "Northwind Studio" },
+      { "id": "c3", "name": "Telar Labs" },
+      { "id": "c4", "name": "Faro Energía" }
+    ],
+    "extra": {
+      "proyectos": [
+        { "id": "pr1", "nombre": "Rediseño de la app de pedidos", "responsableId": "p1", "empresaId": "c1", "estado": "En curso", "entrega": "14 oct" },
+        { "id": "pr2", "nombre": "Panel de métricas internas", "responsableId": "p4", "empresaId": "c3", "estado": "En riesgo", "entrega": "20 oct" },
+        { "id": "pr3", "nombre": "Campaña de lanzamiento otoño", "responsableId": "p5", "empresaId": "c2", "estado": "En curso", "entrega": "28 oct" },
+        { "id": "pr4", "nombre": "Migración del sistema de pagos", "responsableId": "p2", "empresaId": "c4", "estado": "Completado", "entrega": "2 oct" },
+        { "id": "pr5", "nombre": "Onboarding para clientes nuevos", "responsableId": "p3", "empresaId": "c1", "estado": "En curso", "entrega": "5 nov" },
+        { "id": "pr6", "nombre": "Auditoría de accesibilidad", "responsableId": "p1", "empresaId": "c3", "estado": "Completado", "entrega": "30 sep" },
+        { "id": "pr7", "nombre": "Integración con el CRM", "responsableId": "p2", "empresaId": "c2", "estado": "En riesgo", "entrega": "11 nov" },
+        { "id": "pr8", "nombre": "Informe trimestral de ventas", "responsableId": "p4", "empresaId": "c4", "estado": "En curso", "entrega": "15 nov" },
+        { "id": "pr9", "nombre": "Nueva web corporativa", "responsableId": "p5", "empresaId": "c1", "estado": "En curso", "entrega": "22 nov" },
+        { "id": "pr10", "nombre": "App móvil de fidelización", "responsableId": "p3", "empresaId": "c3", "estado": "En curso", "entrega": "1 dic" },
+        { "id": "pr11", "nombre": "Sistema de reservas online", "responsableId": "p2", "empresaId": "c4", "estado": "Completado", "entrega": "25 sep" }
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "id": "listado",
+      "component": "ejemplo/ListadoProyectos",
+      "durationInFrames": 75,
+      "props": { "pressNewAt": 60 },
+      "cursor": { "points": [ { "x": 55, "y": 60, "frame": 0 }, { "x": 55, "y": 60, "frame": 20 }, { "x": 93, "y": 6, "frame": 56 } ], "clickFrames": [60] }
+    },
+    {
+      "id": "modal",
+      "component": "ejemplo/ModalNuevoProyecto",
+      "durationInFrames": 200,
+      "props": { "nombre": "Lanzamiento de la tienda online", "typingStartFrame": 20, "openSelectAt": 100, "selectAt": 132, "responsableId": "p3", "createPressAt": 175 },
+      "cursor": { "points": [ { "x": 93, "y": 6, "frame": 0 }, { "x": 45, "y": 47, "frame": 16 }, { "x": 45, "y": 47, "frame": 70 }, { "x": 50, "y": 57.5, "frame": 96 }, { "x": 40, "y": 74, "frame": 126 }, { "x": 61.7, "y": 65.8, "frame": 170 } ], "clickFrames": [16, 96, 129, 175] }
+    },
+    {
+      "id": "resultado",
+      "component": "ejemplo/ListadoProyectos",
+      "durationInFrames": 90,
+      "props": { "proyectoNuevo": { "id": "pr-nuevo", "nombre": "Lanzamiento de la tienda online", "responsableId": "p3", "empresaId": "c2", "estado": "En curso", "entrega": "9 dic" }, "resaltadoHasta": 70 },
+      "cursor": { "points": [ { "x": 61.7, "y": 65.8, "frame": 0 }, { "x": 70, "y": 40, "frame": 40 } ], "clickFrames": [] }
+    }
+  ]
+}

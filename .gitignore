@@ -1,0 +1,14 @@
+# Secretos
+.env
+
+# Temporales (renders en curso, stills, frames). Se regeneran.
+.tmp/
+
+# Dependencias (se reinstalan con el instalador)
+node_modules/
+.venv/
+__pycache__/
+
+# Sistema
+.DS_Store
+Thumbs.db

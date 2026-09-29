@@ -1,0 +1,29 @@
+{
+  "name": "product-video-demo-kit-renderer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Motor de Remotion que convierte un guion JSON en un vídeo demo del producto.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render",
+    "still": "remotion still",
+    "compositions": "remotion compositions src/index.ts",
+    "validate-script": "tsx src/lib/validate-cli.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.290",
+    "@remotion/google-fonts": "4.0.290",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.290",
+    "zod": "3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.2",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2"
+  }
+}
