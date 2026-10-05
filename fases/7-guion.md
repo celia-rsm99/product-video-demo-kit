@@ -12,6 +12,7 @@
    - ¿Dónde se va a usar? Web (por defecto: horizontal, al tamaño de las pantallas, sin subtítulos, en bucle), redes (vertical 9:16 o cuadrado 1:1), onboarding, presentación.
    - Duración objetivo (por defecto 20-45 s).
 3. **Guion en palabras.** Escribir la secuencia escena a escena, en lenguaje claro: qué pantalla, qué pasa, en qué orden, dónde empieza y dónde acaba el cursor, qué clic provoca el paso a la siguiente escena. Enseñárselo a la persona y ajustarlo **antes** de tocar el JSON. Es mucho más barato corregir aquí.
+   Para cada escena, piensa primero qué tiene que entender quien lo ve y compón la pantalla para eso (regla 25 de `docs/reglas-de-video.md`): no hace falta enseñar la pantalla completa del producto si una sola tarjeta lo cuenta mejor.
 4. **Datos ficticios** según `docs/datos-ficticios.md`: usuario, personas, empresas y lo propio del producto (en `data.extra`).
 5. **Escribir el JSON** siguiendo `renderer/src/lib/schema.ts` (el guion de ejemplo `renderer/scripts/ejemplo/demo-ejemplo.json` sirve de modelo):
    - el `id` en minúsculas con guiones, p. ej. `crear-proyecto-v1`;

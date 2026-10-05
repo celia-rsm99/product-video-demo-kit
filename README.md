@@ -6,6 +6,8 @@
 
 Este kit convierte las pantallas de tu producto en Figma en vídeos demo: el cursor se mueve, los formularios se rellenan, los menús se abren, y todo se ve exactamente como tu producto, con datos ficticios. Los vídeos se dibujan con código ([Remotion](https://www.remotion.dev/)), así que salen nítidos, se corrigen al detalle y se pueden rehacer con otros datos en minutos.
 
+**Por qué construir y no grabar.** Una grabación de pantalla solo deja recortar y hacer zoom sobre el producto tal como es. Aquí cada pantalla se construye con componentes que reproducen los tuyos, así que el producto se vuelve material: puedes quitar lo que distrae, hacer crecer una tarjeta justo cuando la voz habla de ella, juntar en un mismo encuadre dos piezas que en tu producto están en pantallas distintas, o unir varias escenas con un mismo personaje. Por ejemplo, una tarjeta de filtros que crece y suma el chat del asistente en el momento exacto en que la voz dice "pregúntaselo al asistente", y se ve la petición y su efecto a la vez. Sigue siendo fiel, porque cada pieza es tu componente real; lo que se inventa es la composición, no el aspecto.
+
 **No hace falta saber programar.** Hablas con Claude Code en lenguaje normal y él hace la parte técnica siguiendo unas fases definidas: conecta con tu Figma, descarga las pantallas, te enseña los flujos de tu producto, saca los colores y la tipografía, construye las escenas, escribe el guion y renderiza el vídeo. Tú decides qué contar y das el visto bueno.
 
 ## Qué vas a tener al final

@@ -24,6 +24,7 @@ Repasar escena por escena. Entre paréntesis, la regla detallada.
 - [ ] Si una pantalla cambia según a quién se selecciona, cambia todo lo que depende de esa selección (22).
 - [ ] Nada de secciones con título y sin contenido (23).
 - [ ] Subtítulos desactivados salvo que se pidan; si se quitan, se quitan en todo el vídeo (24).
+- [ ] Cada momento compuesto para lo que se cuenta: pieza mínima primero, que crece o suma otra pieza real cuando la historia introduce algo nuevo (25).
 - [ ] Datos ficticios según `docs/datos-ficticios.md`.
 
 ---
@@ -86,6 +87,10 @@ Repasar escena por escena. Entre paréntesis, la regla detallada.
 
 **24. Desactivados por defecto.** `captionStyle.burnIn: false` en el guion. Si la persona pide quitar los subtítulos "en general", se quitan de todas las escenas de ese vídeo, no solo de la que se mencionó.
 
+## Composición
+
+**25. La pantalla se compone por lo que se cuenta, no por cómo es el producto.** Cada momento empieza con la pieza mínima que lo explica, sola, sin columnas ni paneles que no hablen de eso. Cuando la historia introduce algo nuevo relacionado, la pieza que ya está crece y la nueva pieza real entra dentro o al lado, en vez de cortar a otra pantalla. Si la historia habla de dos cosas a la vez (una petición y su efecto), van en el mismo encuadre aunque en el producto estén separadas. Lo que se inventa es la composición; el aspecto de cada pieza es siempre el de tu producto. *Por qué:* es lo que una grabación no puede hacer y lo que hace que el vídeo cuente una historia en vez de enseñar pantallas. *Cómo:* una prop en la pieza para cada forma en que tenga que crecer (p. ej. `chat` de 0 a 1 que ensancha la tarjeta), animando su ancho nativo y una escala que lo compense para que todo siga cabiendo y centrado.
+
 ## Método de trabajo
 
 - **Ver lo que la persona vio.** Con feedback sobre un MP4, sacar imágenes en cada segundo citado (`tools/extract_frames.py`) antes de tocar nada: el guion y el render pueden no coincidir.
@@ -96,4 +101,4 @@ Repasar escena por escena. Entre paréntesis, la regla detallada.
 
 ## Reglas añadidas en este proyecto
 
-<!-- Claude añade aquí las nuevas, numeradas desde 25, con vídeo y fecha. -->
+<!-- Claude añade aquí las nuevas, numeradas desde 26, con vídeo y fecha. -->
