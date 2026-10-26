@@ -16,6 +16,7 @@ Este kit convierte las pantallas de tu producto en Figma en vídeos demo: el cur
 - **El mapa de flujos**: qué tareas se hacen en tu producto, con qué pantallas y en qué orden.
 - **Tu sistema visual documentado**: design tokens y patrones de interacción, con la fuente de cada valor.
 - **Vídeos demo en MP4**, listos para tu web, redes o presentaciones, y la capacidad de hacer más.
+- **Vídeos explicativos con voz**, si los quieres: 30-60 s que cuentan qué es tu producto o una función nueva, compuestos frase a frase con piezas reales de tu interfaz y movimientos de cámara (`fases/extras/video-explicativo-con-voz.md`).
 
 ## Qué necesitas
 

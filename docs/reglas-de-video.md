@@ -27,6 +27,18 @@ Repasar escena por escena. Entre paréntesis, la regla detallada.
 - [ ] Cada momento compuesto para lo que se cuenta: pieza mínima primero, que crece o suma otra pieza real cuando la historia introduce algo nuevo (25).
 - [ ] Datos ficticios según `docs/datos-ficticios.md`.
 
+**Además, en vídeos explicativos con voz** (`fases/extras/video-explicativo-con-voz.md`), plano a plano:
+
+- [ ] Una pieza real por plano, entera y grande; como mucho 8-10 palabras de interfaz legibles y nada quieto y lleno de texto más de 3-4 s (26, 35).
+- [ ] Cada plano demuestra para qué le sirve la función a quien lo ve, no solo que existe (27).
+- [ ] Efectos de sonido en el frame de la acción que se ve, repasados tras cada cambio de imagen (28).
+- [ ] Voz, música e imágenes generadas, apuntadas en el `PLAN.md` con herramienta, ajustes y texto (29).
+- [ ] Transiciones como movimientos de una sola cámara, sin fundidos cruzados y siempre con algo opaco en plano (30, 32).
+- [ ] Para redes, el frame 0 ya enseña el gancho (31).
+- [ ] La cámara deriva siempre y hace como mucho un movimiento por frase (32).
+- [ ] Formato estrecho (4:5, 9:16): escala con margen para la cámara y zonas seguras respetadas (33).
+- [ ] Subtítulos, si se piden: texto del guion, pegados a la voz y sin repetir lo que ya dice la tipografía (34).
+
 ---
 
 ## Ritmo y tiempo
@@ -85,11 +97,69 @@ Repasar escena por escena. Entre paréntesis, la regla detallada.
 
 ## Subtítulos
 
-**24. Desactivados por defecto.** `captionStyle.burnIn: false` en el guion. Si la persona pide quitar los subtítulos "en general", se quitan de todas las escenas de ese vídeo, no solo de la que se mencionó.
+**24. Desactivados por defecto.** `captionStyle.burnIn: false` en el guion. Si la persona pide quitar los subtítulos "en general", se quitan de todas las escenas de ese vídeo, no solo de la que se mencionó. Cuando sí se piden (habitual en vídeos para redes, que se ven sin sonido), ver la regla 34.
 
 ## Composición
 
 **25. La pantalla se compone por lo que se cuenta, no por cómo es el producto.** Cada momento empieza con la pieza mínima que lo explica, sola, sin columnas ni paneles que no hablen de eso. Cuando la historia introduce algo nuevo relacionado, la pieza que ya está crece y la nueva pieza real entra dentro o al lado, en vez de cortar a otra pantalla. Si la historia habla de dos cosas a la vez (una petición y su efecto), van en el mismo encuadre aunque en el producto estén separadas. Lo que se inventa es la composición; el aspecto de cada pieza es siempre el de tu producto. *Por qué:* es lo que una grabación no puede hacer y lo que hace que el vídeo cuente una historia en vez de enseñar pantallas. *Cómo:* una prop en la pieza para cada forma en que tenga que crecer (p. ej. `chat` de 0 a 1 que ensancha la tarjeta), animando su ancho nativo y una escala que lo compense para que todo siga cabiendo y centrado.
+
+## Vídeos explicativos con voz
+
+Vídeos que cuentan una historia (qué es el producto, por qué sirve, una función nueva para redes) con locución y música, en vez de recorrer un flujo con el cursor. Todas las reglas anteriores siguen valiendo; estas se suman. El proceso está en `fases/extras/video-explicativo-con-voz.md`.
+
+**26. Una idea por plano, y nada metido en una caja.** Cada plano enseña una sola pieza real del producto, entera (sus cuatro bordes, esquinas y relleno a la vista) y grande, legible en un móvil. Ni la pantalla entera dentro de una ventana con zoom (se lee "todo muy contenido en una caja"), ni pantallas completas en 3D con piezas separándose (demasiada interfaz moviéndose a la vez). Matices que salieron de rondas reales:
+- *El titular no es obligatorio ni tiene sitio fijo.* Algunos planos necesitan un texto corto de 2-4 palabras y otros se explican solos. "Titular a la izquierda, animación a la derecha" en todos los planos se lee como plantilla.
+- *Nada de literal y pobre.* Tres funciones resueltas con una caja de texto, dos filas y un mensaje en miniatura se ven baratas. O cada función se enseña de una en una y con tiempo, o se cuenta con otro recurso (tipografía, por ejemplo).
+- *El montaje rápido funciona a propósito.* Muchos cortes seguidos (seis en dos segundos) se leen como energía si cada pieza es entera, grande y entra en movimiento. Lo pobre son las piezas pequeñas y quietas, no que sean muchas.
+- *Abrir solo con tipografía es genérico.* Mejor un solo objeto real y grande (el campo de búsqueda, por ejemplo) que cada verbo de la voz transforma un instante.
+- *Nada asoma por el borde.* Un panel que se ve a medias para sugerir que hay más se lee como componente cortado. Si un componente vive dentro de una pantalla larga, se renderiza suelto, no se recorta a ojo. Única excepción: el primer plano al que se llega moviendo la cámara (regla 32).
+- *Color de acento solo en la palabra clave y en el elemento del que habla la voz.* Los pop-ups salen solos, sin el fondo atenuado de la regla 7: aquí no hay pantalla detrás.
+
+**27. Cada plano enseña para qué le sirve la función a quien lo ve, no solo que existe.** Una lista con tres filas dice "hay una lista"; lo que convence es el volumen (la tabla llena y creciendo), que el producto sigue trabajando solo y que cada fila trae su porqué. *Cómo:* antes de diseñar un plano, escribir en una línea qué resuelve (ahorro de tiempo, confianza, escala, control) y elegir la parte del componente real que lo demuestra. *Encuadre:* la porción más pequeña de la pantalla en la que todo lo visible aporta algo a esa frase. A veces son dos paneles (una conversación con la lista de personas al lado dice a quién se escribe y que hay más); lo que no aporta (navegación, campos vacíos) se queda fuera.
+
+**28. Los efectos de sonido van atados a la acción que se ve.** El tecleo suena solo mientras se ve escribir; clics, pops y whooshes caen en el frame del clic, del cambio o del movimiento que los causa. Cada vez que cambia la imagen de un tramo, se repasa su lista de efectos a la vez, no después: un tecleo heredado de una versión anterior que suena sobre una pantalla quieta es el fallo típico.
+
+**29. Todo lo generado (voz, música, imágenes) queda apuntado en el momento.** En el `PLAN.md` del vídeo o en un `ORIGEN.md` junto al archivo: herramienta y modelo, voz (nombre e id), ajustes, texto o prompt exacto, id de la creación en el servicio y el postproceso (p. ej. "acelerada un 8 %"). Sin eso, cambiar una palabra de la locución semanas después obliga a adivinar con qué voz se hizo, y la nueva toma no casa.
+
+**30. Las transiciones son movimientos de una cámara, no objetos que se mueven solos.** Si cada pieza entra y sale con sus propios giros desde el centro, se ve que "solo se mueven los componentes, no el mundo".
+- *Una sola cámara para todo lo que hay en plano.* Las piezas se colocan en un mismo espacio (una delante, otra 1.500 px detrás) y se anima la cámara. Perspectiva, paralaje (lo cercano pasa rápido, lo lejano casi no se mueve), foco y curva de velocidad salen de ella y casan solos. El fondo se mueve con la cámara; la viñeta no, es de la lente.
+- *Movimientos que funcionan:* grúa (arranca pegada a la pieza, por debajo, enorme y desenfocada, y retrocede hasta dejarla plana y enfocada), la misma grúa al revés para cerrar, un giro rápido sobre sí misma con estelas en el fondo, y una pieza que se transforma en la siguiente (un mensaje que vuela al hilo y se convierte en su burbuja).
+- *Los rótulos van en pantalla, fuera del espacio 3D.* El contraste entre el mundo que se mueve y el texto quieto es lo que se lee como cámara.
+- *Plano cuando hay que leer.* El movimiento termina antes de que se escriba algo o aterrice un elemento en su sitio.
+- *Nada de fundidos cruzados entre dos pantallas.* Dos capas semitransparentes se ven sucias. La saliente se transforma en la entrante o sale por el movimiento de cámara.
+*Cómo, en Remotion:* `perspective()` dentro de `transform`, con `transform-origin` en el centro de la pantalla. La distorsión curva de un gran angular no se puede hacer con CSS.
+
+**31. En un vídeo para redes, el frame 0 ya enseña el gancho.** Las redes reproducen el vídeo solo y sin sonido desde el primer frame, y los primeros tres segundos deciden si alguien sigue mirando. Un frame 0 con el fondo vacío y el logo apareciendo hacia el segundo 1 se pierde. *Cómo:* la animación de entrada arranca ya empezada: en el frame 0 hay texto legible y la pieza principal a medio animar. El gancho es el mismo; solo se adelanta su arranque. El audio no se mueve.
+
+**32. La cámara nunca se para, pero hace como mucho un movimiento por frase.** Un plano que aterriza y se queda clavado se lee como una diapositiva.
+- *Deriva siempre.* Un avance y un deslizamiento lentos y constantes (del orden de 0,04-0,08 % de zoom y 0,3-1 px por frame), también mientras se escribe o se lee.
+- *Un movimiento por frase.* Irse a un plano general inclinado y volver en 1,5 s es "mucho movimiento en muy poco tiempo"; queda mejor un solo retroceso lento. Cada movimiento va atado a lo que dice la voz: acercarse al resultado cuando la voz lo nombra, seguir una tarjeta que se arrastra.
+- *Repertorio que funciona:* subir desde abajo inclinada y quedar recta antes de leer, retroceso rápido para salir, plano general inclinado para enseñar volumen, barrido lateral que enlaza con la entrada de la pantalla siguiente, y bajar de una pantalla a la siguiente.
+- *En cada cambio siempre hay algo opaco en plano.* Al bajar de una pantalla a otra, la saliente sale por arriba mientras la entrante ya asoma por abajo, las dos opacas. Ni fundido ni un frame vacío entre las dos.
+- *Desenfoque de movimiento solo en las salidas rápidas.* En un movimiento que llega a algo que leer, convierte la pieza en una mancha.
+- *Una pieza que se convierte en otra cae exactamente sobre su sitio* (una tarjeta que encoge hasta que su foto cae sobre la foto de su fila en la tabla, y se disuelve en ella). Las posiciones se miden en el diseño, no a ojo.
+- *Cortar bordes vale en un primer plano al que se llega moviendo la cámara* desde la pieza entera. Un recorte quieto sigue leyéndose como componente cortado (regla 26).
+*Cómo:* una función de cámara por tramo que suma los movimientos clave (con easing) y una deriva constante encima, y un contenedor que filma a sus hijos girando sobre el centro de la pantalla. Lo que va en pantalla y tiene que apuntar a algo del mundo (un elemento que vuela a su sitio) proyecta su destino con la misma cámara.
+
+**33. Formato estrecho (4:5 o 9:16): el encaje se decide antes de construir y la cámara necesita margen.**
+- *Escala con margen.* Una pieza que llena justo el ancho útil se sale por un lado en cuanto la cámara se acerca o deriva. Dejar aire (1,9× en vez de 2×). Las piezas anchas (tablas, conversaciones) se rehacen más anchas en nativo y más bajas, para caber en alto a menos escala.
+- *Centrar en el área útil, no en el frame.* En 9:16 la interfaz de Reels, TikTok o LinkedIn tapa unos 240 px arriba, 420 abajo y 120 a la derecha (en 1080×1920). En 4:5 (1080×1350) el feed no tapa nada: 60 px de margen y dos bandas, una para la pieza y otra para los subtítulos.
+- *Moverse en alto.* En vertical sobra recorrido en altura y falta en anchura: las transiciones son subidas y bajadas de cámara entre zonas apiladas, y la deriva es vertical. Las zonas se colocan a menos de un frame de distancia, para que la pieza que sale y la que entra compartan plano.
+- *Comprobar con guías.* Una segunda composición del mismo vídeo con las zonas seguras dibujadas encima, para revisar stills.
+
+**34. Subtítulos, cuando se piden: el texto del guion pegado a la voz, y nada que diga lo mismo dos veces.**
+- *Texto del guion, no de la transcripción.* La transcripción automática parte palabras ("follow -up") y junta frases con comas. Cada palabra del guion se empareja en orden con las de la voz por su forma normalizada, y así cada palabra tiene sus frames.
+- *Trozos cortos* (2-6 palabras, cortados a mano), la palabra que suena en el color de acento, y el primer trozo ya visible en el frame 0 (regla 31).
+- *Sin duplicados.* Con subtítulos sobran los titulares. Donde la tipografía grande ya dice el texto (el cierre, la llamada a la acción), los subtítulos se ocultan.
+
+**35. Muy, muy simple: un foco por plano y las ideas contadas con imagen, no leídas.** El fallo típico es pasar diez de treinta segundos en la misma pantalla, llena de texto y casi sin animación.
+- *Un foco y pocas palabras.* Como mucho 8-10 palabras de interfaz legibles por plano (los subtítulos no cuentan). Lo que no habla de la frase se quita, aunque esté en la pantalla real: un diálogo cuya consecuencia ya se ve, descripciones, pasos de más, la mitad de una tabla.
+- *Ninguna pantalla quieta y llena de texto más de 3-4 s.* Si la voz dedica varias frases al mismo componente, sus ideas se convierten en imagen (las opciones de un diálogo salen volando y se vuelven tarjetas, cada una con una línea por la que caen mensajes hacia su destinatario; "parar solo esta" es cortar esa línea mientras las otras siguen). El componente real aparece solo en el momento de actuar. Un plano de paso que solo enseña un dato no pasa de ~1,5 s.
+- *El sentido del dibujo se lee solo.* Los mensajes caen hacia quien los recibe, como a una bandeja de entrada; si "suben" hacia él, no se entiende quién escribe a quién.
+- *Estados en el formato del producto.* Un "(en pausa)" en texto gris pasa a la etiqueta de estado real (Activo, En pausa, Parado).
+- *Lo pequeño se dibuja a su tamaño final, no se escala.* Una casilla de 14 px escalada 1,8× se ve como un cuadradito raro.
+- *Lo que no aporta sale del plano,* como el tablero que quedaba detrás de un diálogo: se desvanece mientras el diálogo sale.
+Inventar la composición (líneas, mensajes volando, marcas sobre las tarjetas) es aceptable si las piezas son del producto (regla 25), pero se dice al enseñar el render.
 
 ## Método de trabajo
 
@@ -101,4 +171,4 @@ Repasar escena por escena. Entre paréntesis, la regla detallada.
 
 ## Reglas añadidas en este proyecto
 
-<!-- Claude añade aquí las nuevas, numeradas desde 26, con vídeo y fecha. -->
+<!-- Claude añade aquí las nuevas, numeradas desde 36, con vídeo y fecha. -->

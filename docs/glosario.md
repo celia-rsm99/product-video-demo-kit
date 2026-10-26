@@ -22,3 +22,7 @@ Palabras que vas a ver durante el proceso, explicadas sin tecnicismos.
 - **Renderizar**: generar el archivo de vídeo final (MP4) a partir del guion.
 - **Still**: una sola imagen de un frame, para revisar un momento concreto sin renderizar todo.
 - **Entregable**: un vídeo que has aprobado. Se guarda en `entregables/`.
+- **Vídeo explicativo (explainer)**: un vídeo corto con voz que cuenta qué es el producto o una función, en vez de recorrer un flujo con el cursor. Se hace con `fases/extras/video-explicativo-con-voz.md`.
+- **Locución**: la voz que narra el vídeo, grabada o generada con IA.
+- **Plano**: lo que se ve entre dos cambios de encuadre. En un vídeo explicativo, cada frase de la locución suele tener el suyo.
+- **Deriva**: un movimiento de cámara muy lento y constante que hace que el plano no se vea quieto como una diapositiva.

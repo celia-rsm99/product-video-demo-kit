@@ -33,7 +33,7 @@ Este kit convierte el diseño de un producto en Figma en vídeos demo animados c
 | 8 | `fases/8-render-y-revision.md` | Vídeo renderizado y revisado |
 | 9 | `fases/9-entrega.md` | Vídeo aprobado guardado en `entregables/` |
 
-Extras: `fases/extras/usar-una-grabacion-del-producto.md` y `fases/extras/medir-animaciones-en-el-navegador.md`.
+Extras: `fases/extras/usar-una-grabacion-del-producto.md`, `fases/extras/medir-animaciones-en-el-navegador.md` y `fases/extras/video-explicativo-con-voz.md` (vídeos que cuentan una historia con locución, en vez de recorrer un flujo con el cursor).
 
 ## Cómo está hecho el kit (arquitectura WAT)
 

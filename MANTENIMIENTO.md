@@ -47,5 +47,6 @@ Antes del push, repasa el diff completo: el repo es público y lo que se sube pu
 
 - **Sin probar todavía:** la descarga con token contra un archivo real de Figma (`figma_inventory.py --dry-run` gasta 1 llamada y lo confirma) y la instalación en Windows.
 - El ffmpeg que trae Remotion no incluye los filtros `fps`, `setpts` ni `select`: se usa `-r N` y `-itsscale` (ya aplicado en `speed_variant.py` y en las fases).
-- `remotion.config.ts` lleva `Config.setMuted(true)`: los vídeos salen sin pista de audio.
+- `remotion.config.ts` lleva `Config.setMuted(true)`: los vídeos salen sin pista de audio. Los vídeos con voz se renderizan con `tools/render_video.py --con-audio`, que pasa `--muted=false` (una variable de entorno leída en `remotion.config.ts` no funciona: Remotion no la ve).
+- **Vídeos explicativos con voz** (`fases/extras/video-explicativo-con-voz.md`, reglas 26-35): el método está probado en el proyecto de origen, pero el kit no trae todavía un explainer de ejemplo. `tools/transcribe_words.py` necesita `faster-whisper`, que no está en `requirements.txt` a propósito (pesa y solo hace falta para estos vídeos).
 - Licencia: el kit es MIT, pero Remotion exige licencia de empresa a organizaciones de más de 3 personas (lo avisa el README).
